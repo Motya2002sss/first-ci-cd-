@@ -1,12 +1,11 @@
-name: First CI
+name: Docker
 
 on:
    push: 
      branches: ["main"]
-
 jobs:
-  run-message:
-    runs-on: ubuntu-latest
+  runs-docker:
+    run-on: docker-latest
     steps:
-      - name: Print run-message
-        run: echo "fist message"
+      - name: Build docker Images
+        run: docker build -t my-app:${{ github.sha }} .

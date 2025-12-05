@@ -5,7 +5,7 @@ on:
      branches: ["main"]
 
 jobs:
-  run-message:
+  runs-message:
     run-on: ubuntu-latest
     steps:
       - name: Print run-message

@@ -1,0 +1,12 @@
+name: First CI
+
+on:
+   push: 
+     branches: ["main"]
+
+jobs:
+  run-message:
+    run-on: ubuntu-latest
+    steps:
+      - name: Print run-message
+        run: echo "fist message"

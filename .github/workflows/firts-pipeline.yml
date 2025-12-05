@@ -5,8 +5,8 @@ on:
      branches: ["main"]
 
 jobs:
-  runs-message:
-    run-on: ubuntu-latest
+  run-message:
+    runs-on: ubuntu-latest
     steps:
       - name: Print run-message
         run: echo "fist message"

@@ -4,8 +4,8 @@ on:
    push: 
      branches: ["main"]
 jobs:
-  runs-docker:
-    run-on: docker-latest
+  run-docker:
+    runs-on: docker-latest
     steps:
       - name: Build docker Images
         run: docker build -t my-app:${{ github.sha }} .
